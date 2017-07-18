@@ -1,0 +1,1 @@
+During the first 81 years, the average deviation from the temp
