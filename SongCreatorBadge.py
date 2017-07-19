@@ -18,6 +18,13 @@ repeat = Epic.userInt("Enter your repeat amount:")
 fullChorus = (chorus + "") * repeat
 lastChorus = fullChorus + chorus
 
+#changing verses to uppercase
+verseList = [element.upper() for element in verseList]
+
+#changing chorus to lowercase
+fullChorus = fullChorus.lower()
+lastChorus = lastChorus.lower()
+
 # Pairing choruses with each verse
 verseList.insert(1,fullChorus)
 verseList.insert(3,fullChorus)
@@ -30,3 +37,8 @@ del song[17]
 
 print song
 print
+
+# Printing out each element in song and replacing "cookies"
+for lyrics in song:
+    lyrics = lyrics.replace("COOKIES", "_______")
+    print lyrics
